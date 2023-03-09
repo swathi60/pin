@@ -1,0 +1,49 @@
+.p1{
+    width: 300px; height: 300px;
+    margin: 100px;
+    align-content: space-around;
+    background-color: transparent;
+    box-shadow: 1px 1px 8px rgb(233, 232, 232);
+}
+#pin1{
+      width: fit-content; height: fit-content;
+    padding: 2px;
+    margin: 40px;
+    }
+    #bt1{
+        margin: 5px 20px 20px 100px;
+    }
+
+    #content{
+         margin: 10px;
+         
+    }
+    #wl{
+        text-align: center;
+        font-size: medium;
+        color: rgb(199, 101, 31);
+        display: inline-block;
+    }
+ @keyframes typing{
+     
+    from{width:0;
+          }  
+     to{width:25%; }
+ }
+
+    @media(max-width:767px)
+    {
+        #wl{
+            overflow: hidden;
+            white-space: normal;
+            animation: typing 3s steps(30,end);
+        }
+    }
+    @media(min-width:768px)
+    {
+        #wl{
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(30,end);
+        }
+    }
